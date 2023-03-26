@@ -1,2 +1,2 @@
-# ProWayComputers-Learn-Angular-
+# ProWayComputers
 Aprendendo Angular
