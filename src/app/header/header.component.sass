@@ -1,0 +1,81 @@
+$color-blue: #004a76
+$color-dark-blue: #002d47
+$color-orange: #ff7000
+$color-gray: rgba(88, 89, 91, 1)
+$color-light-gray: rgba(232, 232, 232, 1)
+$color-light-gray-2: rgba(247, 247, 247, 1)
+$primary-color: #fff
+$size-title: 60px
+$size-primary: 19px
+$transition: all .3s ease-in-out
+
+.main-header
+  padding: 10px 0
+  display: flex
+  flex-flow: row wrap
+  justify-content: space-between
+  align-items: center
+  column-gap: 40px
+
+  &__title
+    font-size: 92px
+    letter-spacing: -1.5px
+
+    &--blue
+      color: $color-blue
+      font-size: $size-title
+
+    &--orange
+      color: $color-orange
+      font-size: $size-title
+
+  &__menu ul
+    display: flex
+    justify-content: flex-end
+
+  &__menu a
+    padding: 10px 10px
+    color: $color-gray
+    font-weight: 400
+    font-size: $size-primary
+    text-decoration: none
+    transition: $transition
+
+    a:hover
+      background-color: $color-blue
+      color: $primary-color
+
+.container-menu
+  display: flex
+  flex-direction: column
+  row-gap: 20px
+  flex: 1
+
+.badge-carrinho
+  background-color: $color-dark-blue
+  padding: 5px 10px
+  border-radius: 4px
+  color: $primary-color
+
+.search-form
+  display: flex
+  height: 44px
+
+  input
+    box-sizing: border-box
+    height: 56px
+    padding: 28px
+    flex: 1
+    background-color: $color-light-gray
+    color: $color-gray
+    border: none
+    transition: $transition
+    font-size: $size-primary
+
+  button
+    width: 56px
+    height: 56px
+    background-color: $color-blue
+    border: none
+    color: $primary-color
+    font-size: $size-primary
