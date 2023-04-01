@@ -1,0 +1,42 @@
+$color-blue: #004a76
+$color-orange: #ff7000
+$color-gray: rgba(88, 89, 91, 1)
+$color-light-gray: rgba(232, 232, 232, 1)
+$color-light-gray-2: rgba(247, 247, 247, 1)
+$padding-primary: 20px
+
+.footer
+  background-color: $color-light-gray
+  color: $color-gray
+  font-size: 18px
+
+  &__container
+    display: flex
+    justify-content: space-evenly
+    flex-flow: row wrap
+    padding: $padding-primary
+
+  &__copyright
+    text-align: center
+    margin-top: 20px
+    background-color: $color-light-gray-2
+    font-weight: bold
+    padding: $padding-primary
+    color: $color-gray
+
+  &__title
+    font-size: 22px
+    font-weight: bold
+    color: $color-blue
+    margin-bottom: 5px
+
+  &__about
+    &--text
+      width: 400px
+      text-align: justify
+
+  i
+    color: $color-orange
+
+  li
+    margin: 10px 0
