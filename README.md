@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # ProWayWorks
 ### Meu Primeiro Projeto em Angular.
 
@@ -28,9 +27,6 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
 # ProWayComputers-Learn-Angular-
-=======
-# ProWayComputers
->>>>>>> 252d68a (Update README.md)
 Aprendendo Angular
 # ProWayWorks
 
