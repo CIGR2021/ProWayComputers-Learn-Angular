@@ -1,0 +1,56 @@
+$color-blue: #004a76
+$color-gray: rgba(88, 89, 91, 1)
+
+.cart
+  &__title
+    font-size: 44px
+    color: $color-gray
+    font-weight: 700
+    padding: 8px 0
+
+  &__total
+  font-size: 24px
+  color: $color-gray
+  font-weight: 700
+  padding: 8px 0
+
+li
+  display: flex
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px
+  border-radius: 8px
+  overflow: hidden
+  margin: 10px 0
+  height: 100px
+  align-items: center
+  justify-content: space-between
+
+img
+  width: 100px
+  display: block
+
+.remove-button
+  background-color: red
+  border: none
+  color: #fff
+  padding: 20px
+  height: 100%
+  transition: .2s all
+
+.remove-button:hover
+    filter: brightness(0.9)
+
+input
+  width: 30px
+  text-align: center
+
+.buy-button
+  background-color: $color-blue
+  border: none
+  color: #fff
+  padding: 10px
+  font-size: 22px
+  margin-bottom: 10px
+  transition: .3s all
+
+.buy-button:hover
+    filter: brightness(0.9)
