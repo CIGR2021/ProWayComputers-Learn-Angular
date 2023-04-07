@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap')
+
 *
   margin: 0
   padding: 0
   border: 0
   font-size: 100%
   font: inherit
+  font-family: 'Roboto', sans-serif
   vertical-align: baseline
 
 article, aside, details, figcaption, figure,
@@ -32,9 +35,9 @@ input, textarea, select
   padding: 10px
   font-size: 16px
 
-  focus
-    border: 1px solid rgba(0, 74, 124, 0.6)
-    outline: none
+input:focus, textarea:focus, select:focus
+  border: 1px solid rgba(0, 74, 124, 0.6)
+  outline: none
 
 textarea
   resize: none
@@ -48,5 +51,16 @@ textarea
 .invalid
   border: 1px solid red
 
-  focus
-    border-color: red
+.invalid:focus
+  border-color: red
+
+// snacBar
+
+.green-snackbar
+  background: rgb(37, 141, 8)
+  color: white
+
+.green-snackbar button
+  background-color: rgb(37, 141, 8)
+  color: white
+  border: none
