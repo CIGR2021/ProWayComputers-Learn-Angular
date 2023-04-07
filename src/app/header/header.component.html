@@ -6,22 +6,19 @@
   <div class="container-menu">
     <nav class="main-header__menu">
       <ul>
-        <li> <a href=""><i class="fa-brands fa-product-hunt"></i> Produto</a>
-        <li> <a href="">
+        <li><a routerLink="products"><i class="fa-brands fa-product-hunt"></i> Produto</a>
+        <li><a routerLink="cart">
           <i class="fa-solid fa-cart-shopping"></i>
           Carrinho
-          <span class="badge-carinho">0</span>
+          <span class="badge-carinho">{{ cartService.getCartItems().length }}</span>
         </a>
-        <li> <a href=""><i class="fa-solid fa-id-card"></i> Contato</a>
-            <li> <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
-            <li> <a href=""><i class="fa-brands fa-facebook"></i></a>
-            <li> <a href=""><i class="fa-brands fa-twitter"></i></a>
-            <li> <a href=""><i class="fa-brands fa-instagram"></i></a>
+        <li><a routerLink="contact"><i class="fa-solid fa-id-card"></i> Contato</a>
+            <li><a><i class="fa-brands fa-linkedin-in"></i></a>
+            <li><a><i class="fa-brands fa-facebook"></i></a>
+            <li><a><i class="fa-brands fa-twitter"></i></a>
+            <li><a><i class="fa-brands fa-instagram"></i></a>
       </ul>
     </nav>
-    <form class="search-form" action="">
-      <input type="text">
-      <button><i class="fa-solid fa-magnifying-glass"></i></button>
-    </form>
+    <app-search-bar></app-search-bar>
   </div>
 </header>
