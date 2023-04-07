@@ -1,0 +1,65 @@
+$color-blue: #004a76
+$color-orange: #ff7000
+$color-gray: rgba(88, 89, 91, 1)
+
+.product-list
+  padding: 40px 0
+  width: fit-content
+  display: flex
+  gap: 20px
+  flex-flow: row wrap
+  justify-content: space-evenly
+  align-content: center
+
+  &__card
+    box-sizing: border-box
+    padding: 10px
+    border-radius: 4px
+    flex: 0 1 270px
+    height: 450px
+    background-color: white
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px
+
+    img
+      height: 250px
+      width: 250px
+      display: block
+      border-radius: 4px
+
+  &__card:houver
+    outline: 1px solid $color-blue
+    transform: scale(1.1, 1.1)
+    cursor: pointer
+
+  &__link
+    display: flex
+    flex-direction: column
+    align-items: center
+    row-gap: 10px
+    text-decoration: none
+
+.product-item
+  &__name
+    font-size: 24px
+    color: $color-blue
+
+  &__price
+    color: $color-orange
+    font-size: 32px
+    font-weight: bold
+
+    &--description
+      color: $color-gray
+      font-size: 12px
+      font-weight: bold
+
+  &__buy-buton
+    background-color: $color-blue
+    border: none
+    color: white
+    font-size: 20px
+    padding: 6px 12px
+
+  &__buy-buton:hover
+    filter: brightness(1.1)
+    cursor: pointer
